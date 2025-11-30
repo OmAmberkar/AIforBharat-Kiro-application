@@ -1,0 +1,100 @@
+:root {
+    --primary: #6366f1;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+header p { color: #64748b; font-size: 0.9rem; }
+
+.calculator-card {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
+}
+
+.ratio-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.ratio-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.ratio-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.converter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px var(--primary);
+}
+
+.result-area {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: #64748b;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect Ratio Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aspect Ratio Calculator</h1>
+            <p>Calculate dimensions based on common aspect ratios instantly.</p>
+        </header>
+
+        <div class="calculator-card">
+            <div class="input-group">
+                <label>Common Ratios</label>
+                <div class="ratio-buttons">
+                    <button class="ratio-btn active" data-ratio="16:9">16:9</button>
+                    <button class="ratio-btn" data-ratio="4:3">4:3</button>
+                    <button class="ratio-btn" data-ratio="1:1">1:1</button>
+                    <button class="ratio-btn" data-ratio="21:9">21:9</button>
+                </div>
+            </div>
+
+            <div class="converter-grid">
+                <div class="input-wrapper">
+                    <label for="width">Width (px)</label>
+                    <input type="number" id="width" placeholder="1920" value="1920">
+                </div>
+                <div class="input-wrapper">
+                    <label for="height">Height (px)</label>
+                    <input type="number" id="height" placeholder="1080" value="1080">
+                </div>
+            </div>
+            
+            <div class="result-area">
+                <p>Aspect Ratio: <span id="current-ratio">16:9</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
